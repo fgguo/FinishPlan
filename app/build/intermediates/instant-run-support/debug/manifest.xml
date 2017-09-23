@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finishplan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+     
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        name="org.litepal.LitePalApplication"
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.finishplan.MainActivity"
+            android:label="圆计划" >
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.finishplan.Alarmreceiver" />
+
+        <activity android:name="com.example.finishplan.CheckPlan" />
+        <activity android:name="com.example.finishplan.editPage" />
+        <activity android:name="com.example.finishplan.next" />
+
+        <service
+            android:name="com.example.finishplan.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.example.finishplan.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.finishplan.Alarm" />
+        <activity
+            android:name="com.example.finishplan.HistoryPlan"
+            android:label="@string/title_activity_history_plan"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.finishplan.PersonalSpace"
+            android:label="@string/title_activity_personal_space"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.finishplan.PlanChart" />
+        <activity android:name="com.example.finishplan.PersonalSetings" />
+        <activity android:name="com.example.finishplan.conclusion" />
+        <activity android:name="com.example.finishplan.editPassword" />
+        <activity android:name="com.example.finishplan.passwordProset" />
+        <activity android:name="com.example.finishplan.passwordSet" />
+        <activity android:name="com.example.finishplan.passwordproCheck" />
+        <activity android:name="com.example.finishplan.Dailyconclusion" />
+        <activity android:name="com.example.finishplan.tranformation" />
+        <activity android:name="com.example.finishplan.select" />
+        <activity android:name="com.example.finishplan.moodMemory" />
+        <activity android:name="com.example.finishplan.moodRecord" />
+        <activity android:name="com.example.finishplan.userHelper" />
+    </application>
+
+</manifest>

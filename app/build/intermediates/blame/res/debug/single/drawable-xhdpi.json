@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\dell-pc\\AndroidStudioProjects\\finishing\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\indicator.png",
+        "source": "C:\\Users\\dell-pc\\AndroidStudioProjects\\finishing\\app\\src\\main\\res\\drawable-xhdpi\\indicator.png"
+    },
+    {
+        "merged": "C:\\Users\\dell-pc\\AndroidStudioProjects\\finishing\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\dell-pc\\AndroidStudioProjects\\finishing\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dell-pc\\AndroidStudioProjects\\finishing\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_github.png",
+        "source": "C:\\Users\\dell-pc\\AndroidStudioProjects\\finishing\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_github.png"
+    }
+]
