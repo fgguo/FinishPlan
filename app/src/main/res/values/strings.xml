@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">圆计划</string>
+    <string name="title_activity_history_plan">HistoryPlan</string>
+    <string name="title_activity_personal_space">PersonalSpace</string>
+    <string name="title_activity_plan_check">PlanCheck</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
