@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/projectList"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/but_seting"
+            android:layout_marginTop="60dip"
+            android:text="使用帮助"
+            android:textSize="20dip"/>
+
+        <Button
+            android:id="@+id/Security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/projectList"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dip"
+            android:background="@drawable/but_seting"
+            android:text="修改密码"
+            android:textSize="20dip"/>
+
+    </LinearLayout>
+
+</LinearLayout>
